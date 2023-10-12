@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red_c {
+    color: violet;
+}
+
+.color_card {
+    background-color: palegreen;
+}
+
+.img_card {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+h2,
+p,
+h4 {
+
+    color: violet;
+}
