@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            mylist: ""
+            mylist: null,
         }
     },
     methods: {
@@ -16,7 +16,7 @@ createApp({
             .get('myServer.php')
             .then(response => {
                 console.log(response);
-                this.list = response.data;
+                this.mylist = response.data;
             })
     }
 }).mount('#app')
