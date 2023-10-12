@@ -22,3 +22,13 @@ h4 {
 
     color: violet;
 }
+
+#colortextmodal {
+    color: white;
+
+}
+
+.albumcard:hover {
+    transition: all 1s;
+    background-color: aqua;
+}

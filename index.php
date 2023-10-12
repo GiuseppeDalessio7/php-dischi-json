@@ -21,15 +21,18 @@
             <div class="row" style="background-color: #333;">
                 <h1 class="text-center red_c">La mia libreria di dischi</h1>
 
+
+
+                <!-- Button trigger modal -->
                 <div class="dark modal fade " :id="`${album.author.replace(/\s+/g, '')}${index}`" tabindex="-1" :aria-labelledby="`${album.author.replace(/\s+/g, '')}${index}Label`" aria-hidden="true" v-for="(album, index) in mylist" :key="`${album.author.replace(/\s+/g, '')}${index}`">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            <div class="album card border-0 h-100 modal-body">
-                                <img class="img-card-top" style="background-color: greenyellow;" :src="album.poster" alt="">
+                            <div class="album card border-0 h-100 modal-body" style="background-color: black;">
+                                <img class="img-card-top img_card" :src="album.poster" alt="">
                                 <div class="card-body text-center">
-                                    <h2>{{album.title}}</h2>
-                                    <p>{{album.author}}</p>
-                                    <h4>{{album.year}}</h4>
+                                    <h2 id="colortextmodal">{{album.title}}</h2>
+                                    <p id="colortextmodal">{{album.author}}</p>
+                                    <h4 id="colortextmodal">{{album.year}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -54,6 +57,8 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
     <script src="./main.js"></script>
 </body>
 
